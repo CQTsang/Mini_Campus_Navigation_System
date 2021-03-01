@@ -1,0 +1,44 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: navigation - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\Cathy\AppData\Local\Temp\RSP2826.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/navigation.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\school_work\homework\Second\大二上\数据结构与算法\大作业\导航系统+李小为+曾倩欣\navigation\NavigationShort.cpp"
+]
+Creating command line "cl.exe @C:\Users\Cathy\AppData\Local\Temp\RSP2826.tmp" 
+Creating temporary file "C:\Users\Cathy\AppData\Local\Temp\RSP2827.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/navigation.pdb" /debug /machine:I386 /out:"Debug/navigation.exe" /pdbtype:sept 
+".\Debug\index.obj"
+".\Debug\navigation.obj"
+".\Debug\navigationDlg.obj"
+".\Debug\NavigationRoute.obj"
+".\Debug\NavigationShort.obj"
+".\Debug\ShowJXL.obj"
+".\Debug\ShowKYWGC.obj"
+".\Debug\ShowNM.obj"
+".\Debug\ShowTJC.obj"
+".\Debug\ShowTSG.obj"
+".\Debug\ShowXSHDZX.obj"
+".\Debug\StdAfx.obj"
+".\Debug\navigation.res"
+]
+Creating command line "link.exe @C:\Users\Cathy\AppData\Local\Temp\RSP2827.tmp"
+<h3>Output Window</h3>
+Compiling...
+NavigationShort.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+navigation.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

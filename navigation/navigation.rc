@@ -1,0 +1,408 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\navigation.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+LOGO                    ICON    DISCARDABLE     "res\\icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 navigation"
+FONT 9, "宋体"
+BEGIN
+    ICON            128,IDC_STATIC,11,17,20,20
+    LTEXT           "navigation 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2019",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_INDEX DIALOGEX 0, 0, 320, 200
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "卫星"
+FONT 10, "华文中宋"
+BEGIN
+    DEFPUSHBUTTON   "最短路径",IDC_GOTOSHORT,232,59,50,14
+    PUSHBUTTON      "游览路线",IDC_GOTOROUTE,232,91,50,14
+    GROUPBOX        "功能区",IDC_STATIC,220,34,73,127,BS_CENTER
+    PUSHBUTTON      "退出",IDC_EDIT,232,123,50,14
+    PUSHBUTTON      "北门",IDC_BEIMEN,87,29,18,10,0,WS_EX_TRANSPARENT
+    PUSHBUTTON      "游泳池",IDC_YYC,7,22,27,10,0,WS_EX_TRANSPARENT
+    PUSHBUTTON      "学生公寓",IDC_XSGY,140,37,36,10,0,WS_EX_TRANSPARENT
+    PUSHBUTTON      "综合体育馆",IDC_ZHTYG,64,49,45,10,0,WS_EX_TRANSPARENT
+    PUSHBUTTON      "熹园食堂",IDC_ST,93,102,36,10,0,WS_EX_TRANSPARENT
+    PUSHBUTTON      "南门",IDC_NANMEN,72,187,18,10,0,WS_EX_TRANSPARENT | 
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "商业街",IDC_SYJ,94,78,27,10,0,WS_EX_TRANSPARENT
+    PUSHBUTTON      "行政办公楼",IDC_XZBGL,59,142,45,10,0,WS_EX_TRANSPARENT
+    PUSHBUTTON      "图书馆",IDC_TSG,20,132,27,10,0,WS_EX_TRANSPARENT | 
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "康有为广场",IDC_KYWGC,48,130,45,10,0,WS_EX_TRANSPARENT | 
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "信息楼",IDC_XXL,64,119,27,10,0,WS_EX_TRANSPARENT
+    PUSHBUTTON      "教学楼",IDC_JXL,45,93,27,10,0,WS_EX_TRANSPARENT | 
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "综合楼",IDC_ZHL,32,172,27,10,0,WS_EX_TRANSPARENT
+    PUSHBUTTON      "停车场",IDC_TCC,94,124,27,10,0,WS_EX_TRANSPARENT
+    PUSHBUTTON      "学生活动中心",IDC_XSHDZX,123,128,54,10,0,
+                    WS_EX_TRANSPARENT | WS_EX_STATICEDGE
+    PUSHBUTTON      "运动场",IDC_YDC,56,68,27,10,0,WS_EX_TRANSPARENT | 
+                    WS_EX_STATICEDGE
+    CONTROL         140,IDC_STATIC,"Static",SS_BITMAP,7,0,190,203
+END
+
+IDD_SHORT DIALOG DISCARDABLE  0, 0, 320, 200
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "卫星"
+FONT 10, "华文中宋"
+BEGIN
+    EDITTEXT        IDC_EDIT1,66,57,60,14,ES_AUTOHSCROLL
+    LTEXT           "起点：",IDC_START,24,57,25,8
+    LTEXT           "终点：",IDC_END,24,80,25,8
+    LTEXT           "路径长度：",IDC_RLENGTH,24,103,41,8
+    LTEXT           "路径详情：",IDC_PATH,24,126,41,8
+    EDITTEXT        IDC_EDIT2,66,80,60,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,66,103,60,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT4,66,126,214,28,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL
+    PUSHBUTTON      "返回",IDC_BACKTOINDEX,44,170,50,14
+    PUSHBUTTON      "退出",IDC_EDIT,213,170,50,14
+    LTEXT           "最短路径",IDC_STATIC,49,30,33,8
+    ICON            LOGO,IDC_STATIC,25,25,20,20
+    CONTROL         148,IDC_STATIC,"Static",SS_BITMAP,173,18,100,100
+    PUSHBUTTON      "确定",IDC_OK,128,170,50,14
+END
+
+IDD_PATH DIALOG DISCARDABLE  0, 0, 320, 200
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "卫星"
+FONT 10, "华文中宋"
+BEGIN
+    LTEXT           "游览路线",IDC_YLLX,50,30,33,8
+    LTEXT           "路径长度：",IDC_PLENGTH,34,90,41,8
+    LTEXT           "路径详情：",IDC_LJXQ,34,120,41,8
+    EDITTEXT        IDC_SP,88,60,60,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_OPR,88,120,188,40,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL
+    PUSHBUTTON      "游览路线",IDC_CHANGE,128,170,50,14
+    PUSHBUTTON      "返回",IDC_BACKTOINDEX,30,170,50,14
+    PUSHBUTTON      "退出",IDC_EDIT,226,170,50,14
+    ICON            LOGO,IDC_STATIC,25,25,20,20
+    LTEXT           "起点：",IDC_START,34,60,25,8
+    EDITTEXT        IDC_OPLENGTH,88,90,60,14,ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         148,IDC_STATIC,"Static",SS_BITMAP,175,12,100,100
+END
+
+IDD_WELCOME DIALOG DISCARDABLE  0, 0, 320, 200
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "卫星"
+FONT 10, "华文中宋"
+BEGIN
+    DEFPUSHBUTTON   "开始你的旅程",START,220,167,75,20
+END
+
+P_NM DIALOG DISCARDABLE  0, 0, 240, 150
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "南门"
+FONT 10, "System"
+BEGIN
+END
+
+P_JXL DIALOG DISCARDABLE  0, 0, 240, 150
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "教学楼"
+FONT 10, "System"
+BEGIN
+END
+
+P_XSHDZX DIALOG DISCARDABLE  0, 0, 240, 150
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "学生活动中心"
+FONT 10, "System"
+BEGIN
+END
+
+P_KYWGC DIALOG DISCARDABLE  0, 0, 240, 150
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "康有为广场"
+FONT 10, "System"
+BEGIN
+END
+
+P_TJC DIALOG DISCARDABLE  0, 0, 240, 150
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "运动场"
+FONT 10, "System"
+BEGIN
+END
+
+P_TSG DIALOG DISCARDABLE  0, 0, 240, 150
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "图书馆"
+FONT 10, "System"
+BEGIN
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "navigation Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "navigation\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2019\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "navigation.EXE\0"
+            VALUE "ProductName", "navigation 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_INDEX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 311
+        VERTGUIDE, 311
+        BOTTOMMARGIN, 196
+    END
+
+    IDD_SHORT, DIALOG
+    BEGIN
+        LEFTMARGIN, 9
+        RIGHTMARGIN, 310
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_PATH, DIALOG
+    BEGIN
+        LEFTMARGIN, 18
+        RIGHTMARGIN, 301
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    IDD_WELCOME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193
+    END
+
+    P_NM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 233
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+
+    P_JXL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 233
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+
+    P_XSHDZX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 233
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+
+    P_KYWGC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 233
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+
+    P_TJC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 233
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+
+    P_TSG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 233
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\index.bmp"
+MAP                     BITMAP  DISCARDABLE     "res\\map.bmp"
+BACKGROUND              BITMAP  DISCARDABLE     "res\\background.bmp"
+MAP2                    BITMAP  DISCARDABLE     "res\\map2.bmp"
+NM                      BITMAP  DISCARDABLE     "res\\nm.bmp"
+JXL                     BITMAP  DISCARDABLE     "res\\jxl.bmp"
+TJC                     BITMAP  DISCARDABLE     "res\\tjc.bmp"
+TSG                     BITMAP  DISCARDABLE     "res\\tsg.bmp"
+XSHDZX                  BITMAP  DISCARDABLE     "res\\xshdzx.bmp"
+KYWGC                   BITMAP  DISCARDABLE     "res\\kywgc.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 navigation(&A)..."
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\navigation.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
